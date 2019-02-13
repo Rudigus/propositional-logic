@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+  background-color: gainsboro;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.5;
+  color: #003366;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+table {
+  background-color: silver;
+  border-collapse: collapse;
+  border: 1px solid #424242;
+  margin: 0 auto;
+}
+
+thead {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+th, td {
+  border: 1px solid #424242;
+  padding: 15px;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+.truth-table {
+  white-space: nowrap;
+}
+
+.intersection {
+  background-color: #d9bfff;
+}
+
+.left-circle {
+  background-color: #bfbfff;
+}
+
+.right-circle {
+  background-color: #ffbfbf;
+}
+
+.outside {
+  background-color: #bfffbf;
+}
+
+.classification {
+  background: gainsboro;
+}
+
+.logic-table-container {
+  width: 95%;
+  height: 500px;
+  margin: 0 auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.logic-table {
+  display: block;
+  width: 100%;
+}
+
+.logic-table > thead {
+  display: block;
+}
+
+.logic-table > tbody {
+  display: block;
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.logic-table td, .logic-table th {
+  
+}

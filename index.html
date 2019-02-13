@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>IFCE - Extra</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2|Roboto+Slab:700">
+  <meta name="description" content="Diagramas e outras besteirinhas pro curso de Engenharia da Computação">
+</head>
+
+<body>
+  <h1>Conectivos Lógicos</h1>
+  <div class="logic-table-container">
+    <table class="logic-table">
+      <thead>
+        <tr>
+          <th>Operação</th>
+          <th>Conectivo</th>
+          <th>Estrutura Lógica</th>
+          <th>Exemplos</th>
+          <th>Tabela Verdade</th>
+          <th>Diagrama de Venn</th>
+          <th>Diagrama de Euler</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Conjunção</td>
+          <td>∧</td>
+          <td>p e q</td>
+          <td>Martins é bonito <strong>e</strong> Jennifer é legal.</td>
+          <td>
+            <table class="truth-table">
+              <thead>
+                <tr class="classification">
+                  <th>p</th>
+                  <th>q</th>
+                  <th>p ∧ q</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="intersection">
+                  <td>V</td>
+                  <td>V</td>
+                  <td>V</td>
+                </tr>
+                <tr class="left-circle">
+                  <td>V</td>
+                  <td>F</td>
+                  <td>F</td>
+                </tr>
+                <tr class="right-circle">
+                  <td>F</td>
+                  <td>V</td>
+                  <td>F</td>
+                </tr>
+                <tr class="outside">
+                  <td>F</td>
+                  <td>F</td>
+                  <td>F</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td><img src="images/Venn0001.svg" alt="Diagrama Conjunção"></td>
+          <td>Em construção</td>
+        </tr>
+        <tr>
+          <td>Disjunção Inclusiva</td>
+          <td>∨</td>
+          <td>p ou q</td>
+          <td>Martins é bonito <strong>ou</strong> Jennifer é legal.</td>
+          <td>
+            <table class="truth-table">
+              <thead>
+                <tr class="classification">
+                  <th>p</th>
+                  <th>q</th>
+                  <th>p ∨ q</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="intersection">
+                  <td>V</td>
+                  <td>V</td>
+                  <td>V</td>
+                </tr>
+                <tr class="left-circle">
+                  <td>V</td>
+                  <td>F</td>
+                  <td>V</td>
+                </tr>
+                <tr class="right-circle">
+                  <td>F</td>
+                  <td>V</td>
+                  <td>V</td>
+                </tr>
+                <tr class="outside">
+                  <td>F</td>
+                  <td>F</td>
+                  <td>F</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td><img src="images/Venn0111.svg" alt="Diagrama Disjunção Inclusiva"></td>
+          <td>Em construção</td>
+        </tr>
+        <tr>
+          <td>Disjunção Exclusiva</td>
+          <td>⊻</td>
+          <td>Ou p ou q</td>
+          <td><strong>Ou</strong> Martins é bonito <strong>ou</strong> Jennifer é legal.</td>
+          <td>
+            <table class="truth-table">
+              <thead>
+                <tr class="classification">
+                  <th>p</th>
+                  <th>q</th>
+                  <th>p ⊻ q</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="intersection">
+                  <td>V</td>
+                  <td>V</td>
+                  <td>F</td>
+                </tr>
+                <tr class="left-circle">
+                  <td>V</td>
+                  <td>F</td>
+                  <td>V</td>
+                </tr>
+                <tr class="right-circle">
+                  <td>F</td>
+                  <td>V</td>
+                  <td>V</td>
+                </tr>
+                <tr class="outside">
+                  <td>F</td>
+                  <td>F</td>
+                  <td>F</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td><img src="images/Venn0110.svg" alt="Diagrama Disjunção Exclusiva"></td>
+          <td>Em construção</td>
+        </tr>
+        <tr>
+          <td>Condicional</td>
+          <td>→</td>
+          <td>Se p então q</td>
+          <td><strong>Se</strong> Martins é bonito, <strong>então</strong> Jennifer é legal.</td>
+          <td>
+            <table class="truth-table">
+              <thead>
+                <tr class="classification">
+                  <th>p</th>
+                  <th>q</th>
+                  <th>p → q</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="intersection">
+                  <td>V</td>
+                  <td>V</td>
+                  <td>V</td>
+                </tr>
+                <tr class="left-circle">
+                  <td>V</td>
+                  <td>F</td>
+                  <td>F</td>
+                </tr>
+                <tr class="right-circle">
+                  <td>F</td>
+                  <td>V</td>
+                  <td>V</td>
+                </tr>
+                <tr class="outside">
+                  <td>F</td>
+                  <td>F</td>
+                  <td>V</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td><img src="images/Venn1011.svg" alt="Diagrama Condicional"></td>
+          <td>Em construção</td>
+        </tr>
+        <tr>
+          <td>Bicondicional</td>
+          <td>↔</td>
+          <td>P se e somente se q</td>
+          <td>Martins é bonito <strong>se</strong>, <strong>e somente se</strong>, Jennifer é legal.</td>
+          <td>
+            <table class="truth-table">
+              <thead>
+                <tr class="classification">
+                  <th>p</th>
+                  <th>q</th>
+                  <th>p ↔ q</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="intersection">
+                  <td>V</td>
+                  <td>V</td>
+                  <td>V</td>
+                </tr>
+                <tr class="left-circle">
+                  <td>V</td>
+                  <td>F</td>
+                  <td>F</td>
+                </tr>
+                <tr class="right-circle">
+                  <td>F</td>
+                  <td>V</td>
+                  <td>F</td>
+                </tr>
+                <tr class="outside">
+                  <td>F</td>
+                  <td>F</td>
+                  <td>V</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td><img src="images/Venn1001.svg" alt="Diagrama Bicondicional"></td>
+          <td>Em construção</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>
